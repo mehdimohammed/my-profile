@@ -1,0 +1,161 @@
+body{
+	background-image: url(images/fond.jpg);
+	background-position: center;
+	background-color: #FFFBFE;
+	color: rgb(30,30,30);
+	font-family: helvetica;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+h1,h2, h3 {
+	font-family: courier;
+}
+
+h1 {
+	color: #79AEA3;
+    font-size: 32px;
+}
+h2 {
+	font-size: 24px;
+	color: #799879;
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+	color : #134611;
+	font-weight: bold;
+}
+
+/*custom design with class - 99% of your design*/
+
+.container{
+	width: 700px;
+	margin: 40px auto;
+}
+
+@media (max-width: 760px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		width: 400px;
+	}
+}
+
+.card-white {
+	background-color: white;
+	padding: 40px;
+	margin: 20px 0px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	text-align: center;
+}
+
+.img-circle{
+	border-radius: 50%;
+}
+
+.btn-green {
+	background-color: #134611;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+}
+
+.btn-green:hover {
+	color: white;
+	background-color: black;
+}
+
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.list-inline li {
+	display: inline;
+	padding: 10px;
+}
+
+.list-inline i {
+	font-size: 50px;
+	color: rgb(230,230,230);
+}
+
+.list-inline i:hover {
+	color: black;
+}
+
+.image-marquee {
+	padding: 20px;
+	width: 200px;
+}
+
+.block-green {
+	background-color: #c3ebe3;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.block-white {
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.list-colonnes {
+	padding-left: 0px;
+	list-style: none;
+}
+
+.logo-small {
+	width: 50px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 100%;
+  left: 50%; 
+  margin-left: -60px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+/*Design adjustments using id - 1% design remaining*/
+}
+
+#introduction p {
+	margin-bottom: 40px;
+}
